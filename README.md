@@ -13,6 +13,14 @@ Para executar o projeto, siga os passos abaixo:
 
 O servidor será iniciado em http://localhost:8080.
 
+## Run Database - Docker 
+
+Utilize esse comando para iniciar o banco com o docker
+
+```bash
+docker run -d --name postgresql -e POSTGRESQL_PASSWORD=user -e POSTGRESQL_USERNAME=password -e POSTGRESQL_DATABASE=go-api -p 5432:5432 bitnami/postgresql:latest
+```
+
 ## Endpoints
 
 A API oferece os seguintes endpoints:
