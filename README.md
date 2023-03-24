@@ -23,17 +23,21 @@ Endpoint responsável por registrar um novo usuário na aplicação.
 
 Requisição:
 
+```bash
 {
   "email": "email@example.com",
   "password": "123456"
 }
+```
 
 Resposta:
 
+```bash
 {
   "status": "success",
   "message": "User created successfully"
 }
+```
 
 
 ### POST /api/login
@@ -42,13 +46,16 @@ Endpoint responsável por autenticar um usuário na aplicação.
 
 Requisição:
 
+```bash
 {
   "email": "email@example.com",
   "password": "123456"
 }
+```
 
 Resposta:
 
+```bash
 {
   "status": "success",
   "message": "Logged in successfully",
@@ -57,6 +64,7 @@ Resposta:
     "access_token": "<jwt-token>"
   }
 }
+```
 
 ### GET /
 
@@ -64,11 +72,12 @@ Endpoint de teste.
 
 Resposta:
 
+```bash
 {
   "status": "success",
   "message": "API is working"
 }
-
+```
 
 ## Estrutura do projeto
 
